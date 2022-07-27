@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Create cypress examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "cypress:open": "cypress open",
+    "cypress": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilianaMar/CypressTask.git"
+  },
+  "author": "Iliana Markova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilianaMar/CypressTask/issues"
+  },
+  "homepage": "https://github.com/ilianaMar/CypressTask#readme",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
