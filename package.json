@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ilianaMar/CypressTask#readme",
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": false
   },
   "devDependencies": {
     "cypress": "^9.7.0",
