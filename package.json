@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ilianaMar/CypressTask#readme",
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false
+    "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
     "@faker-js/faker": "^7.3.0",

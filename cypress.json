@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://www.aboutyou.bg/",
-    "testFiles": "**/features/*.{feature,features}",
+    "testFiles": "**/*.{feature,features}",
     "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
     "defaultCommandTimeout": 5000,
     "viewportWidth": 1360,

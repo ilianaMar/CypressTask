@@ -1,9 +1,9 @@
-import { Given,When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { Given,When, Then, Before } from 'cypress-cucumber-preprocessor/steps'
 import { loginPage } from '../../support/page-objects/pages/loginPage'
 import { header } from '../../support/page-objects/components/header'
 import { faker } from '@faker-js/faker'
 
-beforeEach(() => {
+Before(() => {
     cy.reload()
 })
 

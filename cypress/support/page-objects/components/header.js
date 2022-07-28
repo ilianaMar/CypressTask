@@ -1,6 +1,7 @@
 class Header {
     constructor() {
         this.accountMenuButton = '[data-test-id="UserAccount"]'
+        this.headerLogo = '[data-test-id="TextLogoContainer"]'
     }
 
     clickOnAccountMenuButton(){
