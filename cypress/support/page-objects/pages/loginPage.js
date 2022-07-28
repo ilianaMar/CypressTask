@@ -6,6 +6,8 @@ class LoginPage {
         this.formButtons = '[data-testid="RegisterAndLoginButtons"]'
         this.signUpForm = '[data-testid="LoginFlowWrapper"]'
         this.signUpFormHeader = '[data-testid="NavigationHeader"]'
+        this.errorInputMessage = '[data-testid="ErrorInfoText"]'
+        this.errorCommonMessage = '.gCMsSs'
     }
 
     clickOnLoginButtonFromPopup(){
@@ -22,11 +24,15 @@ class LoginPage {
         cy.get(this.passwordInputId).should('be.visible').type(password)
     }
 
-    getLoginForm(email, password){
-        clickOnLoginButtonFromPopup();
-        fillInEmailField(email);
-        fillInPasswordField(password);
+    clickOnLoginButton(){
         cy.get(this.loginButtonId).click()
+    }
+
+    getLoginForm(email, password){
+        this.clickOnLoginButtonFromPopup()
+        this.fillInEmailField(email)
+        this.fillInPasswordField(password)
+        this.clickOnLoginButton()   
     }
 }
 

@@ -1,11 +1,11 @@
 Feature: Cucumber examples 
-@focus 
-Scenario: User cannot login with invalid email
-    Given user visits home page
-    When user adds invalid "email"
-    Then user is not logged in
 
-# Scenario: User cannot login with invalid password
-#     Given user visits home page
-#     When user adds invalid "password"
-#     Then user is not logged in
+Scenario: User cannot login with invalid credentials
+    Given user visits home page
+    When user adds invalid credentials
+    Then user is not logged in with invalid credentials
+
+Scenario: User cannot login with empty credentials
+    Given user visits home page
+    When user adds empty credentials
+    Then user is not logged in with empty credentials 

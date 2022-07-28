@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('getElementText', (selector, errorText = '') => {
+    cy.get(selector).should('be.visible').invoke('text').then(text => {
+        expect(text).not.to.be.empty
+        if(errorText.length !== 0){
+            expect(text).to.be.eql(text)
+        }
+    })
+})
