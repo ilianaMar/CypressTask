@@ -9,23 +9,25 @@ describe('Click on top menu', () => {
     })
 
     it('test first level menu', () => {
+        let urlSlug
         cy.visit('/')
         header.getfirstLevelLinkCount().then((cnt) => {
             for (let index = 0; index < cnt; index++) {
                 header.clickOnFirstLevelMenuItem(index)
                 switch (index) {
                     case 0:
-                        cy.url().should('include', 'gender=female') 
+                        urlSlug = 'gender=female'
                         break;
                     case 1:
-                        cy.url().should('include', 'gender=male') 
+                        urlSlug = 'gender=male'
                         break;
                     case 2:
-                        cy.url().should('include', 'detsa')
+                        urlSlug = 'detsa'
                         break;
                     default:
                         console.log(`Sorry, expression ${index} is not correct`)
                 }
+                cy.url().should('include', urlSlug) 
             }
         })     
     })
