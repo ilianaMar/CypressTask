@@ -7,8 +7,9 @@ Before(() => {
     cy.reload()
 })
 
-Given('user visits home page', () => {  
+Given('user visits login page', () => {  
     cy.visit('/')
+    cy.get(loginPage.notifyPopupId).click()
     header.clickOnAccountMenuButton();
     loginPage.clickOnLoginButtonFromPopup();
 })
@@ -34,3 +35,13 @@ Then('user is not logged in with empty credentials', () => {
     cy.getElementText(loginPage.errorInputMessage, errorEmailMessage)
     cy.getElementText(loginPage.errorInputMessage, errorPasswordMessage)
  })
+
+ When('user fills in email in forgot password page', () => {
+    const email = faker.internet.email();
+    loginPage.fillInForgotPasswordForm(email)
+
+})
+
+Then('forgot password request is sent successfully', () => {
+    loginPage.getSuccessfullForgotPasswordMessage()
+})
