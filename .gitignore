@@ -6,3 +6,4 @@ cypress/screenshots
 cypress/results
 mochawesome-report
 yarn.lock
+cypress/support/config/trello-auth.json
