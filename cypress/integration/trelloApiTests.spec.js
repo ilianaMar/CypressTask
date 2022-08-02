@@ -1,10 +1,9 @@
 const trelloAuthConfig = require('../support/config/trello-auth.json')
-
+let key  = trelloAuthConfig.key
+let token = trelloAuthConfig.token
 
 describe('Trello api tests', () => {
     it('check user information', () => {
-        let key  = trelloAuthConfig.key
-        let token = trelloAuthConfig.token
         cy.request({
             method: 'GET',
             url: `${Cypress.config('trelloApiUrl')}1/members/me`,

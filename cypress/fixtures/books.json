@@ -1,0 +1,14 @@
+{
+    "books" :[
+        {
+            "author" : "Iliana Markova",
+            "description" : "Cypress test",
+            "isbn"  : "9781449325862",
+            "pages" : 234,
+            "publish_date" : "2020-06-04T08:48:39.000Z",
+            "publisher": "Iliana test",
+            "subTitle" : "Subtitle example",
+            "title": "Test cypress title"
+        }
+    ]
+}

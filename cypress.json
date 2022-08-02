@@ -1,6 +1,7 @@
 {
     "baseUrl": "https://www.aboutyou.bg/",
     "trelloApiUrl" : "https://api.trello.com/",
+    "demoQAUrl" : "https://demoqa.com/",
     "ignoreTestFiles": [
         "**/login/*.js",
         "**/viewport/*.js"
