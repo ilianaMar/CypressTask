@@ -13,7 +13,6 @@ class BookListingPage {
             .eq(index)
             .invoke('text')
             .then((text) => {
-                console.log(2222, text)
                 expect(text).to.contain(text)
             })
     }
