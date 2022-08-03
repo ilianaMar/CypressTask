@@ -1,7 +1,7 @@
 # Cypress Task
 ### Setup the project
-- Install yarn
-- Clone repo and in the same directory run **yarn install**
+- Install yarn - https://classic.yarnpkg.com/lang/en/docs/install/
+- Clone repo and in the same directory run **yarn install** to install all all dependencies for a project
 - Create trello-auth.json in **cypress/support/config** directory and follow sample to add **cypress/support/config/trello-auth.json.dist** to add your credentials
 
 ### Run tests
@@ -17,6 +17,7 @@ The scope of proeject is to demonstrate how we can write api , e2e and mocked te
 - cypress-real-events - https://www.npmjs.com/package/cypress-xpath
 - mochawesome, mochawesome-merge, mochawesome-report-generator - For more information : https://docs.cypress.io/guides/tooling/reporters#Examples 
 
+## Test description
 - Examples with cypress and cucumber :
   - cypress/integration/login/login.steps.js and cypress/integration/login.feature
   - cypress/integration/viewport and cypress/integration/viewport.feature
