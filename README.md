@@ -14,7 +14,7 @@ The scope of proeject is to demonstrate how we can write api , e2e and mocked te
 - @faker-js/faker - https://www.npmjs.com/package/@faker-js/faker
 - cypress-cucumber-preprocessor - https://www.npmjs.com/package/cypress-cucumber-preprocessor
 - cypress-xpath - https://www.npmjs.com/package/cypress-xpath
-- cypress-real-events - https://www.npmjs.com/package/cypress-xpath
+- cypress-real-events - https://www.npmjs.com/package/cypress-real-events
 - mochawesome, mochawesome-merge, mochawesome-report-generator - For more information : https://docs.cypress.io/guides/tooling/reporters#Examples 
 
 ## Test description
