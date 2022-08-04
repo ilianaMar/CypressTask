@@ -7,7 +7,7 @@
 ### Run tests
 - Run tests in headless mode run **yarn run cypress**
 - Run tests in cypress GUI run **yarn run cypress:open**
-- Run spefic spec test file when you add **--spec {filename}** 
+- Run spefic spec test file when you add --spec {filename} 
 
 ## Scope of project
 The scope of project is to demonstrate how we can write api , e2e and mocked tests via cypress and how we can integrate cucumber with it. 
